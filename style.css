@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #000000da;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 999;
+    color: rgb(255, 255, 255);
+}
+
+.navbar>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.navbar .logo h1 {
+    font-size: 40px;
+    color: #fce79a;
+}
+
+.navbar .logo span {
+    color: #a2b0be;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    color: #fce79a;
+}
+
+.navbar .item img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
