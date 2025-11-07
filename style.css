@@ -21,6 +21,11 @@ body {
     color: #2A2A2A;
 }
 
+a {
+    text-decoration: none;
+    color: #F3F4F8;
+}
+
 .container {
     max-width: 1440px;
     margin-left: auto;
@@ -99,6 +104,7 @@ body {
     height: 90vh;
     display: flex;
     margin-top: 120px;
+    box-shadow: 20px 1px 20px black;
 }
 
 .container .header-text {
@@ -115,7 +121,7 @@ body {
 }
 
 .header-text span {
-    color: #9EB8FF; 
+    color: #2C5EA8;
 }
 
 .header-text p {
@@ -125,7 +131,7 @@ body {
 
 .header-text button {
     margin-top: 40px;
-    background-color:#7FB3F4;
+    background-color:#2C5EA8;
     border: none;
     cursor: pointer;
     padding: 1.4rem 3.8rem;
@@ -138,6 +144,162 @@ body {
 
 .header-text button:hover {
     transform: scale(1.05);
-    transition: 0.8s ease;
-    background-color: #CBB8FF;
+    transition: 0.5s ease;
+    background-color: #3A66C1;
+    color: #ffffff;
+}
+
+/*SEÇÃO SOBRE*/
+
+.sobre-section .container {
+    max-width: 1240px;
+}
+
+.sobre-section .sobre {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.geral-title h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+.geral-title span {
+    color: #2C5EA8;
+    
+}
+
+.geral-p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.sobre-section {
+    margin-bottom: 140px;
+}
+
+/*COLECAO*/
+
+.colecao .geral-p {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.product .img-product img {
+    width: 320px;
+    height: 450px;
+    border-radius: 50px;
+}
+
+.coluna {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.coluna>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.coluna>*:hover {
+    transform: translateY(-5px);
+}
+
+.coluna-4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.product {
+    color: #2c2c2c;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-product {
+    margin-top: 24px;
+    font-size: 22px;
+}
+
+.p-price {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3A66C1;
+}
+
+.colecao .button {
+    display: flex;
+    justify-content: center;
+}
+
+ .colecao button {
+    margin-top: 40px;
+    background-color:#2C5EA8;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    width: 280px;
+    color: white;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+ .colecao button:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    background-color: #3A66C1;
+    color: #ffffff;
+}
+
+/*BENEFICIOS*/
+
+.cards {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 20px;
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.card h1 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.card:hover {
+    border: 2px solid #2C5EA8;
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    font-size: 50px;
+    color: #2C5EA8;
+    margin-top: 20px;
 }
