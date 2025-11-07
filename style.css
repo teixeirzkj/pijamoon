@@ -6,8 +6,19 @@
     box-sizing: border-box;
 }
 
+:root {
+  --color-bg-dark: #1E2A38;
+  --color-accent: #B8A4FF;
+  --color-bg-light: #E8ECF3;
+  --color-highlight: #FFD86B;
+  --color-text: #F8F9FB;
+  --color-subtext: #AAB2C8;
+}
+
 body {
     font-family: poppins;
+    background-color: #F3F4F8;
+    color: #2A2A2A;
 }
 
 .container {
@@ -17,13 +28,13 @@ body {
 }
 
 .navbar {
-    background-color: #000000da;
+    background-color: #A3BCE8;
     padding: 16px;
     position: sticky;
     top: 0;
     box-shadow: 10px 0px 10px #2c2c2c;
     z-index: 999;
-    color: rgb(255, 255, 255);
+    color: #F3F4F8;
 }
 
 .navbar>div {
@@ -45,11 +56,11 @@ body {
 
 .navbar .logo h1 {
     font-size: 40px;
-    color: #fce79a;
+    color:#3A5BA0;
 }
 
 .navbar .logo span {
-    color: #a2b0be;
+    color: #FFD86B;
 }
 
 .navbar ul {
@@ -64,7 +75,7 @@ body {
     transform: translateY(-5px);
     transition: all 0.5s ease;
     font-weight: bold;
-    color: #fce79a;
+    color: #FFD86B;
 }
 
 .navbar .item img {
@@ -73,4 +84,55 @@ body {
     cursor: pointer;
 }
 
+/*SECTION HEADER*/
 
+.header-bg {
+    position: relative;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255,0)), url(media/ChatGPT\ Image\ 6\ de\ nov.\ de\ 2025\,\ 21_01_41.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+
+.container .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+    height: 70vh;
+}
+
+.header-text h1 {
+    margin-top: 30%;
+    font-size: 90px;
+}
+
+.header-text span {
+    color: #9EB8FF; 
+}
+
+.header-text p {
+    font-size: 28px;
+    color: #3A3A3A;
+}
+
+.header-text button {
+    margin-top: 40px;
+    background-color:#7FB3F4;
+    border: none;
+    cursor: pointer;
+    padding: 1.4rem 3.8rem;
+    width: 300px;
+    color: white;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.header-text button:hover {
+    transform: scale(1.05);
+    transition: 0.8s ease;
+    background-color: #CBB8FF;
+}
