@@ -34,7 +34,6 @@ a {
 
 .navbar {
     background-color: #1E2A38;
-    padding: 16px;
     position: fixed;
     width: 100%;
     height: 150px;
@@ -186,13 +185,19 @@ a {
 }
 
 /*COLECAO*/
+.colecao-section {
+  position: relative;
+  background-color: #E8ECF3;
+  margin-top: 0;
+  padding-bottom: 120px;
+}
 
 .colecao .geral-p {
     display: flex;
     margin: 0 auto;
     max-width: 1000px;
 }
-
+ 
 .product .img-product img {
     width: 320px;
     height: 450px;
@@ -265,6 +270,18 @@ a {
 
 /*BENEFICIOS*/
 
+.section-beneficios {
+  position: relative;
+  background: linear-gradient(180deg, #2C5EA8 0%, #1E2A38 100%);
+  margin-top: 0;
+  padding-top: 10px;
+  color: #F8F9FB;
+}
+
+.section-beneficios span {
+    color: #FFD86B;
+}
+
 .cards {
     display: flex;
     margin-top: 100px;
@@ -278,6 +295,9 @@ a {
     width: 500px;
     border-radius: 20px;
     transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.014);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     padding: 20px;
     text-align: center;
     margin: 20px;
@@ -287,19 +307,47 @@ a {
     font-size: 34px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .card p {
     font-size: 20px;
+    color: white;
 }
 
 .card:hover {
-    border: 2px solid #2C5EA8;
-    transform: translateY(-5px);
+    background-color: #3A66C1;
+    border-color: #A8B8FF;
+    
+    transform: translateY(-8px);
 }
 
 .card .icon {
     font-size: 50px;
-    color: #2C5EA8;
+    color: #FFD86B;
     margin-top: 20px;
+}
+
+
+
+.custom-shape-divider-bottom-1762602606 {
+    position: absolute;
+    bottom: 0; /* <-- muda de top: 0 para bottom: 0 */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+}
+
+.custom-shape-divider-bottom-1762602606 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    transform: rotate(360deg); /* <-- inverte a curva para apontar pra baixo */
+}
+
+.custom-shape-divider-bottom-1762602606 .shape-fill {
+    fill: #2C5EA8 /* cor da curva */
 }
