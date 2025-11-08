@@ -96,7 +96,7 @@ a {
 
 .header-bg {
     position: relative;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255,0)), url(media/hero-pajamas\ \(2\).jpg);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255,0)), url(media/fundo2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
